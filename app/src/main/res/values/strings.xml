@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">My Application</string>
+    <string name="txt_registar_mascosta">Registrar Mascosta</string>
+    <string name="txt_consulta_eliminacion">Consulta/Elimininacion</string>
+    <string name="txt_registrar_vacuna">Registar Vacuna</string>
+    <string name="txt_registrar_propietario">Registrar Propietario</string>
+    <string name="txt_salir">Salir</string>
+    <string name="txt_cedula_mascosta">Cedula Mascosta</string>
+    <string name="txt_nombre_mascosta">Nombre  Mascota</string>
+    <string name="txt_tipo_mascosta">Tipo Mascota</string>
+    <string name="txt_edad_mascosta">Edad Mascosta</string>
+    <string name="txt_raza">Raza</string>
+    <string name="txt_buscar_propietario">Buscar Propietario</string>
+    <string name="txt_registar">Registrar</string>
+    <color name="txt_cedula_mascota">Cedula Mascota</color>
+    <color name="txt_eliminar">Eliminar</color>
+    <color name="txt_volver">Volver</color>
+
 </resources>

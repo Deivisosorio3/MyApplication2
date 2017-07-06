@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#48da20</color>
+    <color name="colorPrimaryDark">#cc3951</color>
+    <color name="colorAccent">#4ddd1d</color>
+    <color name="registrar_mascota">#de27c5</color>
+    <color name="consulta_eliminacion">#ef9d10</color>
+    <color name="registar_vacuna">#d70b0b</color>
+    <color name="registrar_propietario">#32de49</color>
+    <color name="salir">#f0030825</color>
+    <color name="registrar">#fb4d1a21</color>
+    <color name="eliminar">#4c42d2</color>
+    <color name="volver">#ffffff</color>
 </resources>
