@@ -12,8 +12,5 @@
     <string name="txt_raza">Raza</string>
     <string name="txt_buscar_propietario">Buscar Propietario</string>
     <string name="txt_registar">Registrar</string>
-    <color name="txt_cedula_mascota">Cedula Mascota</color>
-    <color name="txt_eliminar">Eliminar</color>
-    <color name="txt_volver">Volver</color>
 
 </resources>
