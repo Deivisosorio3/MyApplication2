@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<dimen name="alto_boton">200dp</dimen>
+    <dimen name="ancho_boton">60dp</dimen>
+   <dimen name="txt">50sp</dimen>
+
+
+
+
+
+
+
+
+
+
+
+</resources>

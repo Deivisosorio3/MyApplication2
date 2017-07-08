@@ -1,25 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.pc.myapplication.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
     <Button
-        android:layout_width="368dp"
-        android:layout_height="wrap_content"
-        android:text="Ponchera deivis"
-        tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="0dp" />
+        android:id="@+id/button6"
+        android:layout_width="@dimen/alto_boton"
+        android:layout_height="@dimen/ancho_boton"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button4"
+        android:text="Registrar Mascota"
+        android:textColor="@color/registrar_mascota"
+        tools:layout_editor_absoluteX=""
+        tools:layout_editor_absoluteY="0dp"
+        tools:text="@string/txt_registar_mascosta" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="@dimen/alto_boton"
+        android:layout_height="@dimen/ancho_boton"
+        android:text="Consulta\Eliminacion"
+        tools:layout_editor_absoluteX="106dp"
+        tools:layout_editor_absoluteY="60dp"
+        android:textColor="@color/consulta_eliminacion"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/button3"
+        android:layout_marginTop="79dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="@dimen/alto_boton"
+        android:layout_height="@dimen/ancho_boton"
+        android:text="Registrar Vacuna"
+        tools:layout_editor_absoluteY="183dp"
+        tools:layout_editor_absoluteX="148dp"
+        android:textColor="@color/registar_vacuna"
+        android:layout_above="@+id/button4"
+        android:layout_alignStart="@+id/button4" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="@dimen/alto_boton"
+        android:layout_height="@dimen/ancho_boton"
+        android:text="Registrar Propietario"
+        tools:layout_editor_absoluteY="122dp"
+        tools:layout_editor_absoluteX="148dp"
+        android:textColor="@color/registrar_propietario"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="@dimen/alto_boton"
+        android:layout_height="@dimen/ancho_boton"
+        android:text="Salir"
+        tools:layout_editor_absoluteY="243dp"
+        tools:layout_editor_absoluteX="148dp"
+        android:textColor="@color/salir"
+        android:layout_below="@+id/button4"
+        android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="21dp" />
 
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>
