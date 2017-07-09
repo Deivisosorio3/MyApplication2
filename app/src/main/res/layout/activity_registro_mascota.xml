@@ -60,6 +60,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="70dp"
         android:background="?attr/colorAccent"
+        android:onClick="registrar"
         android:text="Registrar"
         android:textColor="@color/registrar" />
 

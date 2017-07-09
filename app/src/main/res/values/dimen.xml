@@ -8,6 +8,8 @@
     <dimen name="ancho_spinner">130dp</dimen>
     <dimen name="spinner_dere">110dp</dimen>
     <dimen name="tex_view">50dp</dimen>
+    <dimen name="serch_view_ancho">500dp</dimen>
+    <dimen name="serch_view_alto">50dp</dimen>
 
 
 

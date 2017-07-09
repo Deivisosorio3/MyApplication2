@@ -38,7 +38,7 @@ public class Vacuna {
         this.dosis = dosis;
     }
 
-    public Vacuna(String nombre, String nueVacuna, Date fecha,String dosis) {
+    public void Vacuna(String nombre, String nueVacuna, Date fecha,String dosis) {
 
         this.nombre = nombre;
         this.nueVacuna = nueVacuna;

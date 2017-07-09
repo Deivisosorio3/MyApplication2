@@ -17,7 +17,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".RegistroMascota" />
-        <activity android:name=".Consulta"></activity>
+        <activity android:name=".Consultar"></activity>
     </application>
 
 </manifest>
