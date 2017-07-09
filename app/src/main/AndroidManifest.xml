@@ -16,7 +16,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".RegistroMascota"></activity>
+        <activity android:name=".RegistroMascota" />
+        <activity android:name=".Consulta"></activity>
     </application>
 
 </manifest>

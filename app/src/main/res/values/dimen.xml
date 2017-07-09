@@ -3,7 +3,11 @@
 <dimen name="alto_boton">200dp</dimen>
     <dimen name="ancho_boton">40dp</dimen>
    <dimen name="espacio_botones">20dp</dimen>
-
+    <dimen name="spinner">10dp</dimen>
+    <dimen name="derecha_spinner">10dp</dimen>
+    <dimen name="ancho_spinner">130dp</dimen>
+    <dimen name="spinner_dere">110dp</dimen>
+    <dimen name="tex_view">50dp</dimen>
 
 
 

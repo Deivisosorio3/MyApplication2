@@ -8,19 +8,19 @@
 
     <TextView
         android:id="@+id/textView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="61dp"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
         android:layout_below="@+id/spinner"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Nombre Del Propietario" />
 
     <TextView
         android:id="@+id/textView7"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView"
-        android:layout_marginTop="38dp"
+        android:layout_width="150dp"
+        android:layout_height="25dp"
+        android:text="Nombre Mascota"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/textView6"
         android:layout_alignStart="@+id/textView6" />
 
@@ -28,16 +28,21 @@
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerVertical="true"
-        android:layout_alignParentStart="true" />
+        android:layout_marginRight="@dimen/spinner"
+        android:layout_marginLeft="@dimen/spinner_dere"
+        android:layout_below="@+id/editText"
+        android:layout_alignStart="@+id/textView6"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="73dp" />
 
     <Spinner
         android:id="@+id/spinner2"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/ancho_spinner"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/spinner"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="22dp" />
+        android:layout_marginRight="@dimen/spinner"
+        android:layout_marginLeft="@dimen/derecha_spinner"
+        android:layout_above="@+id/textView6"
+        android:layout_toStartOf="@+id/spinner" />
 
     <Spinner
         android:id="@+id/spinner3"
@@ -51,15 +56,17 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_marginBottom="35dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp"
+        android:background="?attr/colorAccent"
+        android:text="Registrar"
+        android:textColor="@color/registrar" />
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_below="@+id/editText2"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="22dp"
@@ -70,8 +77,8 @@
 
     <EditText
         android:id="@+id/editText2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/editText"
         android:layout_marginTop="20dp"
