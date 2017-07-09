@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.pc.myapplication.MainActivity">
+    tools:context="com.example.pc.myapplication.vista.MainActivity">
 
     <Button
         android:id="@+id/button6"
@@ -12,12 +12,12 @@
         android:layout_height="@dimen/ancho_boton"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/button4"
+        android:layout_marginTop="@dimen/espacio_botones"
         android:background="@color/color_boton"
+        android:onClick="registroMascota"
         android:text="Registrar Mascota"
         android:textColor="@color/registrar_mascota"
-        android:layout_marginTop="@dimen/espacio_botones"
-        tools:text="@string/txt_registar_mascosta"
-        />
+        tools:text="@string/txt_registar_mascosta" />
 
     <Button
         android:id="@+id/button2"
