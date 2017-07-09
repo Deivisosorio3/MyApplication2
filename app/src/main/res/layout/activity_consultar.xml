@@ -6,20 +6,13 @@
     android:layout_height="match_parent"
     tools:context="com.example.pc.myapplication.Consultar">
 
-    <SearchView
-        android:id="@+id/searchView"
-        android:layout_width="80dp"
-        android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
-
     <ScrollView
         android:layout_width="400dp"
         android:layout_height="200dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/searchView"
-        android:layout_marginTop="36dp"
-        android:id="@+id/scrollView2">
+        android:layout_marginTop="90dp"
+        android:id="@+id/scrollView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignEnd="@+id/button8">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -37,12 +30,12 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_below="@+id/scrollView2"
-        android:layout_marginStart="32dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="65dp"
         android:background="@color/eliminar"
-        android:text="Eliminar" />
+        android:text="Eliminar"
+        android:layout_below="@+id/scrollView2"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:id="@+id/button8"
@@ -53,4 +46,33 @@
         android:layout_marginEnd="62dp"
         android:background="@color/volver"
         android:text="Volver" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/scrollView2"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText4"
+        android:layout_marginEnd="17dp"
+        android:layout_toStartOf="@+id/button8"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/scrollView2"
+        android:layout_alignTop="@+id/imageButton2"
+        android:layout_marginEnd="48dp"
+        android:layout_marginTop="11dp"
+        app:srcCompat="@android:drawable/presence_audio_online" />
 </RelativeLayout>
