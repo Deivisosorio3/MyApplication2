@@ -10,6 +10,14 @@ public class Mascota {
     private String cedula;
     private String nombre;
     private int edad;
+
+    public Mascota(String cedula, String nombre, int edad, String raza) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.edad = edad;
+        this.raza = raza;
+    }
+
     private String raza;
 
     public String getCedula() {

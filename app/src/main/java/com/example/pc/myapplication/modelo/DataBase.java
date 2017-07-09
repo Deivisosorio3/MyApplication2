@@ -4,19 +4,21 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+import com.example.pc.myapplication.constantes.Constantes;
+
 /**
  * Created by user on 08/07/2017.
  */
 
-public class DataBase {
+public class DataBase extends SQLiteOpenHelper{
 
-    public class BaseDatos  extends SQLiteOpenHelper {
 
-        String crearTablaMascota="create table mascota (cedula text , nombre text, edad int,raza text)";
-        String crearTablaVacuna="create table vacuna (nombre text , nueVacuna text, edad int,fecha Date ,dosis text)";
-        String crearTablaPropietario="create table propietario (cedula text , nombre text, telefono int)";
 
-        public BaseDatos(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
+        String crearTablaMascota="create table "+ Constantes.NOMBRE_TABLA_MASCOTAS+" ("+Constantes.COLUMNA_CEDULA_MASCOTA+" text , "+Constantes.COLUMNA_NOMBRE_MASCOTA+" text, "+Constantes.COLUMNA_EDAD_MASCOTA+"int,"+Constantes.COLUMNA_RAZA_MASCOTA+" text,"+Constantes.NOMBRE_MASCOTA+"text)";
+        String crearTablaVacuna="create table "+Constantes.NOMBRE_TABLA_VACUNAS+" ("+Constantes.COLUMNA_NOMBRE_VACUNA+" text,"+Constantes.COLUMNA_FECHA_VACUNA+" Date ,"+Constantes.COLUMNA_DOSIS_VACUNA+" text)";
+        String crearTablaPropietario="create table propietario"+Constantes.NOMBRE_TABLA_PROPIETARIOS+" ("+Constantes.COLUMNA_CEDULA_PROPIETARIO+" text , "+Constantes.COLUMNA_NOMBRE_PROPIETARIO+" text, "+Constantes.COLUMNA_TELEFONO_PROPIETARIO+" text,"+Constantes.NOMBRE_PROPIETARIO+"text)";
+
+        public DataBase(Context context, String name, SQLiteDatabase.CursorFactory factory, int version) {
             super(context, name, factory, version);
         }
 
@@ -29,13 +31,12 @@ public class DataBase {
 
         @Override
         public void onUpgrade(SQLiteDatabase db, int i, int i1) {
-            db.execSQL("drop table if exists mascota");
+            db.execSQL("drop table if exists "+Constantes.NOMBRE_TABLA_MASCOTAS);
             db.execSQL(crearTablaMascota);
-            db.execSQL("drop table if exists vacuna");
-            db.execSQL(crearTablaMascota);
-            db.execSQL("drop table if exists propietario");
+            db.execSQL("drop table if exists "+Constantes.NOMBRE_TABLA_VACUNAS);
+            db.execSQL(crearTablaVacuna);
+            db.execSQL("drop table if exists "+Constantes.NOMBRE_TABLA_PROPIETARIOS);
             db.execSQL(crearTablaPropietario);
 
         }
     }
-}

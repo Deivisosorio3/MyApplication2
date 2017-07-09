@@ -8,7 +8,8 @@ public class Propietario {
 
     private String cedula;
     private String nombre;
-    private int telefono;
+    private String telefono;
+    private String nombre_p;
 
     public String getCedula() {
         return cedula;
@@ -26,18 +27,17 @@ public class Propietario {
         this.nombre = nombre;
     }
 
-    public int getTelefono() {
+    public String getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(int telefono) {
+    public void setTelefono(String telefono) {
         this.telefono = telefono;
     }
 
-    public Propietario(String cedula, String nombre, int telefono) {
+    public Propietario(String cedula, String nombre, String telefono) {
         this.cedula = cedula;
         this.nombre = nombre;
-
         this.telefono = telefono;
     }
 }

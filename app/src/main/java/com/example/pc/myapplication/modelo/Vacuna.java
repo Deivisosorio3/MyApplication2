@@ -8,27 +8,28 @@ import java.util.Date;
 
 public class Vacuna {
     private String nombre;
-    private String nueVacuna;
-    private Date fecha;
+    private String fecha;
     private String dosis;
+    private String nombre_m;
+
 
     public String getNombre() {
         return nombre;
     }
 
+    public String getNombre_m() {
+        return nombre_m;
+    }
 
+    public void setNombre_m(String nombre_m) {
+        this.nombre_m = nombre_m;
+    }
 
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
-    public String getNueVacuna() {
-        return nueVacuna;
-    }
 
-    public void setNueVacuna(String nueVacuna) {
-        this.nueVacuna = nueVacuna;
-    }
 
     public String getDosis() {
         return dosis;
@@ -38,10 +39,9 @@ public class Vacuna {
         this.dosis = dosis;
     }
 
-    public void Vacuna(String nombre, String nueVacuna, Date fecha,String dosis) {
+    public  Vacuna(String nombre, String fecha,String dosis) {
 
         this.nombre = nombre;
-        this.nueVacuna = nueVacuna;
         this.fecha = fecha;
         this.dosis = dosis;
 

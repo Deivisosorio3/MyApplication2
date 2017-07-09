@@ -6,9 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-import com.example.pc.myapplication.Consultar;
 import com.example.pc.myapplication.R;
-import com.example.pc.myapplication.RegistroMascota;
 import com.example.pc.myapplication.modelo.Propietario;
 import com.example.pc.myapplication.modelo.Vacuna;
 
