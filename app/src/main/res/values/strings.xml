@@ -12,5 +12,32 @@
     <string name="txt_raza">Raza</string>
     <string name="txt_buscar_propietario">Buscar Propietario</string>
     <string name="txt_registar">Registrar</string>
+    <string-array name="Tipo_de_mascota">
+        <item>Perro</item>
+        <item>Gato</item>
+        <item>loro</item>
+        <item>Raton</item>
+    </string-array>
+    <string-array name="Edad_Mascota">
+        <item>0/1</item>
+        <item>0/2</item>
+        <item>0/3</item>
+        <item>0/4</item>
+        <item>0/5</item>
+        <item>0/6</item>
+        <item>0/7</item>
+        <item>0/8</item>
+        <item>0/9</item>
+    </string-array>
+    <string-array name="RAZA">
+        <item>raza1</item>
+        <item>raza2</item>
+        <item>raza3</item>
+        <item>raza4</item>
+        <item>raza5</item>
+        <item>raza6</item>
+        <item>raza7</item>
+        <item>raza8</item>
+    </string-array>
 
 </resources>
