@@ -3,12 +3,17 @@
     <color name="colorPrimary">#48da20</color>
     <color name="colorPrimaryDark">#cc3951</color>
     <color name="colorAccent">#4ddd1d</color>
-    <color name="registrar_mascota">#de27c5</color>
-    <color name="consulta_eliminacion">#ef9d10</color>
-    <color name="registar_vacuna">#d70b0b</color>
-    <color name="registrar_propietario">#32de49</color>
-    <color name="salir">#f0030825</color>
+    <color name="registrar_mascota">#e4f7eff6</color>
+    <color name="consulta_eliminacion">#76da4b</color>
+    <color name="registar_vacuna">#0b3bd7</color>
+    <color name="registrar_propietario">#13d8e2</color>
+    <color name="salir">#f0813391</color>
     <color name="registrar">#fb4d1a21</color>
     <color name="eliminar">#4c42d2</color>
     <color name="volver">#ffffff</color>
+    <color name="color_boton">#f42229</color>
+    <color name="color_boton1">#42319b</color>
+    <color name="color_boton2">#df9494</color>
+    <color name="color_boton3">#1a0303</color>
+    <color name="color_boton4">#5ca999</color>
 </resources>
