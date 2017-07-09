@@ -10,7 +10,8 @@
     <dimen name="tex_view">50dp</dimen>
     <dimen name="serch_view_ancho">40dp</dimen>
     <dimen name="serch_view_alto">50dp</dimen>
-
+    <dimen name="spinner_alto">300dp</dimen>
+    <dimen name="spinner_derecha">100dp</dimen>
 
 
 
