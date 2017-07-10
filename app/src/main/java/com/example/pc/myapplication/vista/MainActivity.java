@@ -33,8 +33,8 @@ Button regM,regVa,regPro,regis,sal;
 
     }
     public void registroPropietario(View v){
-      //  Intent i = new Intent(this,RegistroPropietario.class );
-      //  startActivity(i);
+       Intent i = new Intent(this,RegistroPropietario.class );
+        startActivity(i);
 
     }
     public void detalles(View v){
