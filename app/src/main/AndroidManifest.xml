@@ -18,9 +18,9 @@
         </activity>
         <activity android:name=".vista.RegistroMascota" />
         <activity android:name=".vista.Consultar" />
-        <activity android:name=".registro" />
-        <activity android:name=".detalles" />
-        <activity android:name=".propietario"></activity>
+        <activity android:name=".vista.RegistroVacuna" />
+        <activity android:name=".vista.Detalles" />
+        <activity android:name=".vista.RegistroPropietario" />
     </application>
 
 </manifest>

@@ -10,6 +10,16 @@ public class Mascota {
     private String cedula;
     private String nombre;
     private int edad;
+    private String raza;
+    private String nombreP;
+
+    public String getNombreP() {
+        return nombreP;
+    }
+
+    public void setNombreP(String nombreP) {
+        this.nombreP = nombreP;
+    }
 
     public Mascota(String cedula, String nombre, int edad, String raza) {
         this.cedula = cedula;
@@ -18,7 +28,7 @@ public class Mascota {
         this.raza = raza;
     }
 
-    private String raza;
+
 
     public String getCedula() {
         return cedula;

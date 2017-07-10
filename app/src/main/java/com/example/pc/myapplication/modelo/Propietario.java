@@ -11,6 +11,14 @@ public class Propietario {
     private String telefono;
     private String nombre_p;
 
+    public String getNombre_p() {
+        return nombre_p;
+    }
+
+    public void setNombre_p(String nombre_p) {
+        this.nombre_p = nombre_p;
+    }
+
     public String getCedula() {
         return cedula;
     }

@@ -26,7 +26,7 @@ public class Constantes {
 
     public static final String COLUMNA_CEDULA_PROPIETARIO= "cedula";
     public static final String COLUMNA_NOMBRE_PROPIETARIO= "nombre";
-    public static final String COLUMNA_TELEFONO_PROPIETARIO= "propietario";
+    public static final String COLUMNA_TELEFONO_PROPIETARIO= "telefono";
 
 
 }

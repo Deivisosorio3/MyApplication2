@@ -28,20 +28,22 @@ Button regM,regVa,regPro,regis,sal;
 
     }
     public void registroVacuna(View v){
-        Intent i = new Intent(this, Vacuna.class );
+        Intent i = new Intent(this, RegistroVacuna.class );
         startActivity(i);
 
     }
     public void registroPropietario(View v){
-        Intent i = new Intent(this, Propietario.class );
-        startActivity(i);
+      //  Intent i = new Intent(this,RegistroPropietario.class );
+      //  startActivity(i);
 
     }
-    public void registrar(View v){
-        Intent i = new Intent(this, RegistroMascota.class );
+    public void detalles(View v){
+        Intent i = new Intent(this, Detalles.class );
         startActivity(i);
 
+
     }
+
     public void reg(View v){
         Intent i = new Intent(this, Consultar.class );
         startActivity(i);
