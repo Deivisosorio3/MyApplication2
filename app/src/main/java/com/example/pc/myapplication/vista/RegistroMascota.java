@@ -23,7 +23,7 @@ public class RegistroMascota extends AppCompatActivity {
     TextView nombrePropietario,telefonoPropietario;
     Mascota mascota;
     Propietario propietario;
-    S
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
