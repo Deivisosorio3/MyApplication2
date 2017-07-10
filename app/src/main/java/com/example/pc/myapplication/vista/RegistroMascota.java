@@ -77,9 +77,6 @@ public class RegistroMascota extends AppCompatActivity {
         Log.e("tipo", tipoMas);
 
 
-
-
-
     }
 
 

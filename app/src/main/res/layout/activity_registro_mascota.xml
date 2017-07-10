@@ -7,7 +7,7 @@
     tools:context="com.example.pc.myapplication.vista.RegistroMascota">
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/nombrePropietario"
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_marginTop="90dp"
@@ -20,7 +20,7 @@
         android:layout_width="150dp"
         android:layout_height="25dp"
         android:layout_above="@+id/button"
-        android:layout_alignStart="@+id/textView6"
+        android:layout_alignStart="@+id/nombrePropietario"
         android:layout_marginBottom="26dp"
         android:text="Telefono Propietario" />
 
@@ -31,7 +31,7 @@
         android:layout_marginRight="@dimen/spinner"
         android:layout_marginLeft="@dimen/spinner_dere"
         android:layout_below="@+id/editText"
-        android:layout_alignStart="@+id/textView6"
+        android:layout_alignStart="@+id/nombrePropietario"
         android:layout_marginStart="12dp"
         android:layout_marginTop="73dp" />
 
@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:layout_marginRight="@dimen/spinner"
         android:layout_marginLeft="@dimen/derecha_spinner"
-        android:layout_above="@+id/textView6"
+        android:layout_above="@+id/nombrePropietario"
         android:layout_toStartOf="@+id/spinner" />
 
     <Spinner
@@ -56,13 +56,13 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginBottom="49dp"
         android:background="?attr/colorAccent"
-        android:onClick="registrar"
+        android:onClick="registrarMascota"
         android:text="Registrar"
-        android:textColor="@color/registrar"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:textColor="@color/registrar" />
 
     <EditText
         android:id="@+id/editText"
@@ -97,10 +97,10 @@
         android:inputType="textPersonName"
         android:hint="Buscar Propietario"
         android:layout_below="@+id/spinner"
-        android:layout_toStartOf="@+id/imageButton" />
+        android:layout_toStartOf="@+id/buscarPropietario" />
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/buscarPropietario"
         android:layout_width="60dp"
         android:layout_height="40dp"
         android:layout_alignTop="@+id/editText3"
