@@ -51,7 +51,7 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="@dimen/espacio_botones"
         android:background="@color/color_boton3"
-        android:onClick="RegistroPropietario"
+        android:onClick="registroPropietario"
         android:text="Registrar Propietario"
         android:textColor="@color/registrar_propietario"
         tools:layout_editor_absoluteX="148dp"
