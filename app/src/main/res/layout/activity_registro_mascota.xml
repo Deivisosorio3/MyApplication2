@@ -16,13 +16,13 @@
         android:layout_centerHorizontal="true" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/telefonoPropietario"
         android:layout_width="150dp"
         android:layout_height="25dp"
-        android:text="Telefono Propietario"
         android:layout_above="@+id/button"
         android:layout_alignStart="@+id/textView6"
-        android:layout_marginBottom="26dp" />
+        android:layout_marginBottom="26dp"
+        android:text="Telefono Propietario" />
 
     <Spinner
         android:id="@+id/spinner"
