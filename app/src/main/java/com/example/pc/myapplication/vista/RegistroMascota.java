@@ -3,11 +3,13 @@ package com.example.pc.myapplication.vista;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.pc.myapplication.R;
 import com.example.pc.myapplication.controlador.ControladorMascotas;
@@ -23,6 +25,7 @@ public class RegistroMascota extends AppCompatActivity {
     TextView nombrePropietario,telefonoPropietario;
     Mascota mascota;
     Propietario propietario;
+
 
 
     @Override
@@ -49,12 +52,31 @@ public class RegistroMascota extends AppCompatActivity {
 
     }
     public void buscarPropietario(View v){
+        String nombreP;
+        nombreP=nombrePropietario.getText().toString();
+        propietario=controladorPropietario.consultarPropietario(nombreP);
+        if (propietario == null){
 
+            Toast.makeText(this, "El Propietario No Existe", Toast.LENGTH_SHORT).show();
+        }else {
 
+            nombrePropietario.setText(nombreP);
+            telefonoPropietario.setText(propietario.getTelefono());
+        }
 
 
     }
     public void registrarMascota(View v){
+        String cedulaMas=cedula.getText().toString();
+        String nombreMas=nombre.getText().toString();
+        int edadMas=Integer.parseInt(edad.getSelectedItem().toString());
+        String tipoMas=tipo.getSelectedItem().toString();
+        String razaMas=raza.getSelectedItem().toString();
+
+        Log.e("edad", String.valueOf(edadMas));
+        Log.e("tipo", tipoMas);
+
+
 
 
 
