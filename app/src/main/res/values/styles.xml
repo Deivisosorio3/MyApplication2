@@ -6,7 +6,8 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:windowBackground">?android:attr/textColorHintInverse</item>
+        <item name="android:windowBackground">@color/registrar_mascota</item>
+        <item name="android:colorBackground">@color/registrar_mascota</item>
     </style>
 
 </resources>
