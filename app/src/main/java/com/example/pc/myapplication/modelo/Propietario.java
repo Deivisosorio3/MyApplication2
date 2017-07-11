@@ -6,25 +6,25 @@ package com.example.pc.myapplication.modelo;
 
 public class Propietario {
 
-    private String cedula;
+    private int cedula;
     private String nombre;
-    private String telefono;
-    private String nombre_p;
+    private int telefono;
+    private String nombre_m;
 
-    public String getNombre_p() {
-        return nombre_p;
-    }
-
-    public void setNombre_p(String nombre_p) {
-        this.nombre_p = nombre_p;
-    }
-
-    public String getCedula() {
+    public int getCedula() {
         return cedula;
     }
 
-    public void setCedula(String cedula) {
+    public void setCedula(int cedula) {
         this.cedula = cedula;
+    }
+
+    public String getNombre_m() {
+        return nombre_m;
+    }
+
+    public void setNombre_m(String nombre_m) {
+        this.nombre_m = nombre_m;
     }
 
     public String getNombre() {
@@ -35,15 +35,15 @@ public class Propietario {
         this.nombre = nombre;
     }
 
-    public String getTelefono() {
+    public int getTelefono() {
         return telefono;
     }
 
-    public void setTelefono(String telefono) {
+    public void setTelefono(int telefono) {
         this.telefono = telefono;
     }
 
-    public Propietario(String cedula, String nombre, String telefono) {
+    public Propietario(int cedula, String nombre, int telefono) {
         this.cedula = cedula;
         this.nombre = nombre;
         this.telefono = telefono;

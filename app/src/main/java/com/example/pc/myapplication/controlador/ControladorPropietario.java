@@ -40,9 +40,10 @@ public class ControladorPropietario {
         sqLiteDatabase.close();
         Cursor cursor=sqLiteDatabase.rawQuery(consultar,null);
         if (cursor.moveToFirst()){
-            propietario=new Propietario(cursor.getString(0),cursor.getString(1),cursor.getString(2));
+            propietario=new Propietario(cursor.getInt(0),cursor.getString(1),cursor.getInt(2));
         }else {
-            propietario=null;
+
+            propietario = null;
         }
 
         sqLiteDatabase.close();
