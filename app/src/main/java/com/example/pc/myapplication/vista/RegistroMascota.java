@@ -73,7 +73,7 @@ public class RegistroMascota extends AppCompatActivity {
         String tipoMas=tipo.getSelectedItem().toString();
         String razaMas=raza.getSelectedItem().toString();
 
-     mascota=new Mascota(cedulaMas, nombreMas,tipoMas,edadMas,razaMas,propietario.getNombre_p());
+     mascota=new Mascota(cedulaMas, nombreMas,tipoMas,edadMas,razaMas,propietario.getNombre());
         controladorMascotas.registrarMascota(mascota);
 
 

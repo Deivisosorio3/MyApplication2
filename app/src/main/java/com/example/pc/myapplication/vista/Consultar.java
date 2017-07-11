@@ -1,5 +1,6 @@
 package com.example.pc.myapplication.vista;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -49,6 +50,13 @@ public class Consultar extends AppCompatActivity {
          datosMascota.setText("Nombre Mascota:"+mascota.getNombre()+" \n Tipo Mascota:"+mascota.getTipo()+" \n Edad Mascota:"+mascota.getEdad()+" \n Raza Mascota:"+mascota.getRaza()+" \n Cedula Propietario:"+propietario.getCedula()+" \n Nombre Propietario:"+propietario.getNombre()+" \n Telefono Propietario:"+propietario.getTelefono());
 
         }
+
+
+
+    }
+    public void volver(View v){
+        Intent i = new Intent(this, MainActivity.class );
+        startActivity(i);
 
 
     }
