@@ -101,6 +101,8 @@
         android:layout_below="@+id/spinner"
         android:layout_toStartOf="@+id/buscarPropietario" />
 
+
+
     <ImageButton
         android:id="@+id/buscarPropietario"
         android:layout_width="60dp"
@@ -114,8 +116,8 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/agregar_mascota"
+        android:layout_height="40dp"
+        app:srcCompat="@mipmap/huella"
         android:layout_above="@+id/editText"
         android:layout_toEndOf="@+id/editText2" />
 </RelativeLayout>
