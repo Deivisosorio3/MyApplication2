@@ -3,6 +3,7 @@ package com.example.pc.myapplication.vista;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.Toast;
@@ -36,6 +37,8 @@ public class RegistroPropietario extends AppCompatActivity {
         String nombreP=nombre.getText().toString();
 
         p=new Propietario(cedulaP,nombreP,telefonoP);
+
+        Log.e("nombre", p.getNombre());
         controladorPropietario.registrarPropietario(p);
         Toast.makeText(this, "El Registro ha sido Exitoso", Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(this,MainActivity.class);
