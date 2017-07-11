@@ -8,7 +8,7 @@
 
     <ScrollView
         android:layout_width="400dp"
-        android:layout_height="200dp"
+        android:layout_height="300dp"
         android:layout_marginTop="24dp"
         android:id="@+id/scrollView2"
         android:layout_below="@+id/imageButton2"
@@ -16,30 +16,24 @@
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_marginLeft="40dp"
-            android:layout_marginRight="40dp">
 
-            <ListView
-                android:id="@+id/Lista"
-                android:layout_width="239dp"
-                android:layout_height="wrap_content" />
-        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_dato_mascota"
+            android:layout_width="290dp"
+            android:layout_height="match_parent" />
+
     </ScrollView>
 
     <Button
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_marginStart="42dp"
-        android:layout_marginTop="65dp"
         android:background="@color/colorAccent"
         android:text="Eliminar"
-        android:layout_below="@+id/scrollView2"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/scrollView2"
+        android:layout_marginBottom="71dp" />
 
     <Button
         android:id="@+id/button8"
@@ -49,7 +43,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="62dp"
         android:background="@color/colorAccent"
-        android:text="Volver" />
+        android:text="Volver"
+        />
 
     <EditText
         android:id="@+id/editText4"
