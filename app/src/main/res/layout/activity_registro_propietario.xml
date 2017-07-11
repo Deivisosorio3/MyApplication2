@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -14,7 +14,10 @@
         android:hint="Nombre Propietario"
         android:inputType="textPersonName"
         tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="97dp" />
+        tools:layout_editor_absoluteY="97dp"
+        android:layout_above="@+id/btn_registrar_propietario"
+        android:layout_alignStart="@+id/edt_cedula_mascota"
+        android:layout_marginBottom="57dp" />
 
     <EditText
         android:id="@+id/edt_cedula_mascota"
@@ -24,7 +27,9 @@
         android:hint="Cedula Propietario"
         android:inputType="number"
         tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="40dp" />
+        tools:layout_editor_absoluteY="40dp"
+
+        android:layout_centerHorizontal="true" />
 
     <EditText
         android:id="@+id/edt_telefono_mascota"
@@ -34,7 +39,10 @@
         android:hint="Telefono Propietario"
         android:inputType="number"
         tools:layout_editor_absoluteX="97dp"
-        tools:layout_editor_absoluteY="178dp" />
+        tools:layout_editor_absoluteY="178dp"
+        android:layout_below="@+id/edt_cedula_mascota"
+        android:layout_alignStart="@+id/edt_cedula_mascota"
+        android:layout_marginTop="22dp" />
 
     <Button
         android:id="@+id/btn_registrar_propietario"
@@ -42,6 +50,10 @@
         android:layout_height="wrap_content"
         android:text="registrar"
         tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="274dp" />
+        tools:layout_editor_absoluteY="274dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="39dp"
+        android:layout_marginBottom="211dp" />
 
-</android.support.constraint.ConstraintLayout>
+</RelativeLayout>

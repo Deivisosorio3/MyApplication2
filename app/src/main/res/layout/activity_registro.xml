@@ -73,7 +73,7 @@
         android:textStyle="bold"/>
 
     <Button
-        android:layout_width="80dp"
+        android:layout_width="100dp"
         android:layout_height="50dp" />
 
 
