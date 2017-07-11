@@ -11,7 +11,7 @@
         android:layout_height="300dp"
         android:layout_marginTop="24dp"
         android:id="@+id/scrollView2"
-        android:layout_below="@+id/cedulaMascota"
+        android:layout_below="@+id/imagen_buscar"
         android:layout_centerHorizontal="true"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp">
@@ -29,12 +29,11 @@
         android:id="@+id/button7"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
+        android:background="@color/colorAccent"
+        android:text="Eliminar"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/scrollView2"
-        android:layout_marginBottom="71dp"
-        android:background="@color/colorAccent"
-        android:onClick="eliminarMascota"
-        android:text="Eliminar" />
+        android:layout_marginBottom="71dp" />
 
     <Button
         android:id="@+id/button8"
@@ -44,28 +43,28 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="62dp"
         android:background="@color/colorAccent"
-        android:onClick="volver"
-        android:text="Volver" />
+        android:text="Volver"
+        />
 
     <EditText
-        android:id="@+id/editText4"
+        android:id="@+id/edt_cedula_mascota"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
         android:layout_alignParentTop="true"
         android:layout_alignStart="@+id/scrollView2"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="10dp"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_marginLeft="10dp"/>
+        android:hint="Cedula Mascota"
+        android:inputType="number" />
 
     <ImageButton
-        android:id="@+id/cedulaMascota"
+        android:id="@+id/imagen_buscar"
         android:layout_width="60dp"
         android:layout_height="40dp"
-        android:layout_alignTop="@+id/editText4"
-        android:layout_toEndOf="@+id/editText4"
-        android:background="@color/colorAccent"
-        android:onClick="buscarEliPro"
-        app:srcCompat="@android:drawable/ic_menu_search" />
+        app:srcCompat="@android:drawable/ic_menu_search"
+        android:layout_alignTop="@+id/edt_cedula_mascota"
+        android:layout_toEndOf="@+id/edt_cedula_mascota"
+        android:background="@color/colorAccent"/>
 
 </RelativeLayout>
