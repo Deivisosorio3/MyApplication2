@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Vetery</string>
     <string name="txt_registar_mascosta">Registrar Mascosta</string>
-    <string name="txt_consulta_eliminacion">Consulta/Elimininacion</string>
+    <string name="txt_consulta_eliminacion">Consulta &amp; Elimininacion</string>
     <string name="txt_registrar_vacuna">Registar Vacuna</string>
     <string name="txt_registrar_propietario">Registrar Propietario</string>
     <string name="txt_salir">Salir</string>
