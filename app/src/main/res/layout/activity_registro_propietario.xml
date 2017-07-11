@@ -6,4 +6,42 @@
     android:layout_height="match_parent"
     tools:context="com.example.pc.myapplication.vista.RegistroPropietario">
 
+    <EditText
+        android:id="@+id/edt_nombre_propietario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Nombre Propietario"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="97dp" />
+
+    <EditText
+        android:id="@+id/edt_cedula_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Cedula Propietario"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <EditText
+        android:id="@+id/edt_telefono_mascota"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Telefono Propietario"
+        android:inputType="number"
+        tools:layout_editor_absoluteX="97dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <Button
+        android:id="@+id/btn_registrar_propietario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="registrar"
+        tools:layout_editor_absoluteX="64dp"
+        tools:layout_editor_absoluteY="274dp" />
+
 </android.support.constraint.ConstraintLayout>
