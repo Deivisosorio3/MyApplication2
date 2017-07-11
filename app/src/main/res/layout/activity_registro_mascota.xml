@@ -64,17 +64,6 @@
         android:text="Registrar"
         android:textColor="@color/registrar" />
 
-    <EditText
-        android:id="@+id/editText"
-        android:layout_width="200dp"
-        android:layout_height="50dp"
-        android:layout_below="@+id/editText2"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="22dp"
-        android:ems="10"
-        android:hint="Nombre Mascota"
-        android:inputType="textPersonName"
-        android:textStyle="bold" />
 
     <EditText
         android:id="@+id/editText2"
@@ -87,6 +76,19 @@
         android:hint="Cedula Mascota"
         android:inputType="number"
         android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/editText2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:ems="10"
+        android:hint="Nombre Mascota"
+        android:inputType="textPersonName"
+        android:textStyle="bold" />
+
 
     <EditText
         android:id="@+id/editText3"
