@@ -26,7 +26,7 @@ public class ControladorPropietario {
         String registro="insert into "+Constantes.NOMBRE_TABLA_PROPIETARIOS +
                 "("+Constantes.COLUMNA_CEDULA_PROPIETARIO+ " ,"+
                     Constantes.COLUMNA_NOMBRE_PROPIETARIO+"," +
-                    Constantes.COLUMNA_TELEFONO_PROPIETARIO+ ") values("+propietario.getCedula()+",'"+propietario.getNombre()+"',"+propietario.getTelefono()+")";
+                    Constantes.COLUMNA_TELEFONO_PROPIETARIO + ") values("+propietario.getCedula()+",'"+propietario.getNombre()+"',"+propietario.getTelefono()+")";
         sqLiteDatabase.execSQL(registro);
         sqLiteDatabase.close();
     }
@@ -34,6 +34,7 @@ public class ControladorPropietario {
     public ControladorPropietario(Context context) {
         this.context = context;
         baseD = new DataBase(context, Constantes.NOMBRE_BD, null, 1);
+
     }
 
     public Propietario consultarPropietario(String nombre){

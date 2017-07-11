@@ -37,8 +37,8 @@ public class RegistroMascota extends AppCompatActivity {
         raza=(Spinner)findViewById(R.id.spinner2);
         edad=(Spinner)findViewById(R.id.spinner);
         cedula=(EditText)findViewById(R.id.editText2);
-        nombre=(EditText)findViewById(R.id.editText2);
-        buscarP=(EditText)findViewById(R.id.editText2);
+        nombre=(EditText)findViewById(R.id.editText);
+        buscarP=(EditText)findViewById(R.id.editText3);
         nombrePropietario=(TextView)findViewById(R.id.nombrePropietario);
         telefonoPropietario=(TextView)findViewById(R.id.telefonoPropietario);
         ArrayAdapter<CharSequence> adapter= ArrayAdapter.createFromResource(this,R.array.Edad_Mascota,android.R.layout.simple_spinner_item) ;
@@ -68,7 +68,7 @@ public class RegistroMascota extends AppCompatActivity {
     }
     public void buscarPropietario(View v){
         String nombreP;
-        nombreP=nombrePropietario.getText().toString();
+        nombreP=nombre.getText().toString();
         propietario=controladorPropietario.consultarPropietario(nombreP);
         if (propietario == null){
 
