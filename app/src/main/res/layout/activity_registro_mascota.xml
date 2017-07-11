@@ -101,6 +101,8 @@
         android:layout_below="@+id/spinner"
         android:layout_toStartOf="@+id/buscarPropietario" />
 
+
+
     <ImageButton
         android:id="@+id/buscarPropietario"
         android:layout_width="60dp"
