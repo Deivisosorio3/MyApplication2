@@ -66,7 +66,7 @@ public class RegistroMascota extends AppCompatActivity {
 
 
     }
-    public void registrarMascota(View v){
+    public void registroMascota(View v){
         String cedulaMas=cedula.getText().toString();
         String nombreMas=nombre.getText().toString();
         int edadMas=Integer.parseInt(edad.getSelectedItem().toString());

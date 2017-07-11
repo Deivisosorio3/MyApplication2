@@ -25,7 +25,7 @@ public class ControladorMascotas {
     }
     public void registrarMascota(Mascota m){
         sqLiteDatabase= baseD.getWritableDatabase();
-        String registro="insert into "+Constantes.NOMBRE_TABLA_MASCOTAS+" values('"+ m.getCedula()+ "' ,'"+m.getNombre()+"','"+m.getTipo()+"'," +m.getEdad()+ "' ,"+m.getRaza()+",'"+m.getNombreP()+"')";
+        String registro="insert into "+Constantes.NOMBRE_TABLA_MASCOTAS+"(cedula,nombre,tipo,edad,raza,nombre_p) values('"+ m.getCedula()+ "' ,'"+m.getNombre()+"','"+m.getTipo()+"'," +m.getEdad()+ "' ,"+m.getRaza()+",'"+m.getNombreP()+"')";
         sqLiteDatabase.execSQL(registro);
         sqLiteDatabase.close();
 

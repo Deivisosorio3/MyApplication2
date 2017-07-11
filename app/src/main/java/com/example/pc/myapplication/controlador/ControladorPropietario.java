@@ -22,7 +22,7 @@ public class ControladorPropietario {
 
     public void registrarPropietario(Propietario propietario){
         sqLiteDatabase= baseD.getWritableDatabase();
-        String registro="insert into "+Constantes.NOMBRE_TABLA_PROPIETARIOS+" values('"+Constantes.COLUMNA_CEDULA_PROPIETARIO+ "' ,'"+Constantes.COLUMNA_NOMBRE_PROPIETARIO+"'," +Constantes.COLUMNA_TELEFONO_PROPIETARIO+ "' ,'"+Constantes.NOMBRE_PROPIETARIO+"')";
+        String registro="insert into "+Constantes.NOMBRE_TABLA_PROPIETARIOS+"('"+Constantes.COLUMNA_CEDULA_PROPIETARIO+ "' ,'"+Constantes.COLUMNA_NOMBRE_PROPIETARIO+"'," +Constantes.COLUMNA_TELEFONO_PROPIETARIO+ "' ,'"+Constantes.COLUMNA_NOMBRE_MASCOTA+"') values('"+propietario.getCedula()+"','"+propietario.getNombre()+"','"+propietario.getTelefono()+"')";
         sqLiteDatabase.execSQL(registro);
         sqLiteDatabase.close();
     }
