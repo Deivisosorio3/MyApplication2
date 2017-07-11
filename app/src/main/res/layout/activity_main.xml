@@ -67,7 +67,7 @@
         android:background="@color/colorAccent"
         android:onClick="salir"
         android:text="Salir"
-        android:textColor="@color/salir"
+        android:textColor="@color/registar_vacuna"
         tools:layout_editor_absoluteX="148dp"
         tools:layout_editor_absoluteY="243dp" />
 
