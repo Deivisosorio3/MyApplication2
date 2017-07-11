@@ -68,7 +68,8 @@ public class RegistroMascota extends AppCompatActivity {
     }
     public void buscarPropietario(View v){
         String nombreP;
-        nombreP=nombre.getText().toString();
+        nombreP=buscarP.getText().toString();
+        Log.e("nombreP", nombreP);
         propietario=controladorPropietario.consultarPropietario(nombreP);
         if (propietario == null){
 
