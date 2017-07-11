@@ -57,6 +57,7 @@ android:layout_marginTop="20dp"
         android:layout_marginStart="39dp"
         android:layout_marginBottom="211dp"
         android:background="@color/colorAccent"
-        android:layout_marginRight="200dp"/>
+        android:layout_marginRight="200dp"
+        android:onClick="registrarPropietario"/>
 
 </RelativeLayout>
