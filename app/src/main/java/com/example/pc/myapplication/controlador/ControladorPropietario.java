@@ -37,13 +37,12 @@ public class ControladorPropietario {
     }
 
     public Propietario consultarPropietario(String nombre){
+        Log.e("nombre propietario", nombre);
         sqLiteDatabase= baseD.getWritableDatabase();
         String consultar="select * from "+Constantes.NOMBRE_TABLA_PROPIETARIOS+" where "+Constantes.COLUMNA_NOMBRE_PROPIETARIO+" ='"+nombre+"' ";
 
         Cursor cursor=sqLiteDatabase.rawQuery(consultar,null);
-        cursor.moveToFirst();
-        propietario=new Propietario(cursor.getLong(0),cursor.getString(1),cursor.getLong(2));
-/*
+
         if (cursor.moveToFirst()){
             Log.e("si hay", "registros");
             cursor.close();
@@ -51,7 +50,7 @@ public class ControladorPropietario {
             Log.e("no hay", "registros");
             propietario = null;
         }
-*/
+
         sqLiteDatabase.close();
         return propietario;
     }
