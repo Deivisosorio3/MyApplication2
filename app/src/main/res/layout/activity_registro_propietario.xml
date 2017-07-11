@@ -55,13 +55,14 @@ android:layout_marginTop="20dp"
         android:id="@+id/btn_registrar_propietario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edt_telefono_propietario"
+        android:layout_marginRight="200dp"
+        android:layout_marginTop="59dp"
+        android:layout_toEndOf="@+id/textView"
+        android:background="@color/colorAccent"
+        android:onClick="registrarPropietario"
         android:text="registrar"
         tools:layout_editor_absoluteX="64dp"
-        tools:layout_editor_absoluteY="274dp"
-        android:background="@color/colorAccent"
-        android:layout_marginRight="200dp"
-        android:layout_alignTop="@+id/edt_telefono_propietario"
-        android:layout_toEndOf="@+id/textView"
-        android:layout_marginTop="59dp" />
+        tools:layout_editor_absoluteY="274dp" />
 
 </RelativeLayout>

@@ -29,7 +29,7 @@ public class Consultar extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultar);
-        cedulaMasc=(EditText)findViewById(R.id.editText4);
+        cedulaMasc=(EditText)findViewById(R.id.edt_cedula_mascota);
         datosMascota=(TextView)findViewById(R.id.tv_dato_mascota);
         controladorMascotas=new ControladorMascotas(this);
         controladorPropietario = new ControladorPropietario(this);
