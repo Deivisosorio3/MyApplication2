@@ -115,7 +115,7 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@mipmap/agregar_mascota"
+        app:srcCompat=""
         android:layout_above="@+id/editText"
         android:layout_toEndOf="@+id/editText2" />
 </RelativeLayout>
