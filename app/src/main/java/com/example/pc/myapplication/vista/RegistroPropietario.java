@@ -1,9 +1,11 @@
 package com.example.pc.myapplication.vista;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.pc.myapplication.R;
 import com.example.pc.myapplication.controlador.ControladorMascotas;
@@ -29,13 +31,16 @@ public class RegistroPropietario extends AppCompatActivity {
     }
     public void registrarPropietario(View v){
         Propietario p;
-        int cedulaP=Integer.parseInt(cedula.getText().toString());
-        int telefonoP=Integer.parseInt(telefono.getText().toString());
+        long cedulaP=Long.parseLong(cedula.getText().toString());
+        long telefonoP=Long.parseLong(telefono.getText().toString());
         String nombreP=nombre.getText().toString();
 
         p=new Propietario(cedulaP,nombreP,telefonoP);
         controladorPropietario.registrarPropietario(p);
-
+        Toast.makeText(this, "El Registro ha sido Exitoso", Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
+        finish();
 
 
     }

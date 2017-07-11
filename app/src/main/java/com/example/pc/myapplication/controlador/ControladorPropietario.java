@@ -29,9 +29,7 @@ public class ControladorPropietario {
 
     public ControladorPropietario(Context context) {
         this.context = context;
-        DataBase baseD = new DataBase(context, Constantes.NOMBRE_BD, null, 1);
-        sqLiteDatabase= baseD.getWritableDatabase();
-        sqLiteDatabase.close();
+        baseD = new DataBase(context, Constantes.NOMBRE_BD, null, 1);
     }
 
     public Propietario consultarPropietario(String nombre){

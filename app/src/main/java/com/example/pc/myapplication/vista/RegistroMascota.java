@@ -51,6 +51,21 @@ public class RegistroMascota extends AppCompatActivity {
         controladorPropietario =new ControladorPropietario(this);
 
     }
+
+    public void registroMascota(View v){
+        String cedulaMas=cedula.getText().toString();
+        String nombreMas=nombre.getText().toString();
+        int edadMas=Integer.parseInt(edad.getSelectedItem().toString());
+        String tipoMas=tipo.getSelectedItem().toString();
+        String razaMas=raza.getSelectedItem().toString();
+
+     mascota=new Mascota(cedulaMas, nombreMas,tipoMas,edadMas,razaMas,mascota.getNombreP());
+        controladorMascotas.registrarMascota(mascota);
+        Toast.makeText(this, "El Registro ha sido Exitoso", Toast.LENGTH_SHORT).show();
+
+
+
+    }
     public void buscarPropietario(View v){
         String nombreP;
         nombreP=nombrePropietario.getText().toString();
@@ -61,21 +76,8 @@ public class RegistroMascota extends AppCompatActivity {
         }else {
 
             nombrePropietario.setText(nombreP);
-            telefonoPropietario.setText(propietario.getTelefono());
+            telefonoPropietario.setText(String.valueOf(propietario.getTelefono()));
         }
-
-
-    }
-    public void registroMascota(View v){
-        String cedulaMas=cedula.getText().toString();
-        String nombreMas=nombre.getText().toString();
-        int edadMas=Integer.parseInt(edad.getSelectedItem().toString());
-        String tipoMas=tipo.getSelectedItem().toString();
-        String razaMas=raza.getSelectedItem().toString();
-
-     mascota=new Mascota(cedulaMas, nombreMas,tipoMas,edadMas,razaMas,propietario.getNombre());
-        controladorMascotas.registrarMascota(mascota);
-
 
 
     }
