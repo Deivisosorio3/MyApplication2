@@ -9,7 +9,17 @@ public class Mascota {
 
     private String cedula;
     private String nombre;
+    private String tipo;
     private int edad;
+
+    public String getTipo() {
+        return tipo;
+    }
+
+    public void setTipo(String tipo) {
+        this.tipo = tipo;
+    }
+
     private String raza;
     private String nombreP;
 
@@ -21,14 +31,14 @@ public class Mascota {
         this.nombreP = nombreP;
     }
 
-    public Mascota(String cedula, String nombre, int edad, String raza) {
+    public Mascota(String cedula, String nombre, String tipo, int edad, String raza, String nombreP) {
         this.cedula = cedula;
         this.nombre = nombre;
+        this.tipo = tipo;
         this.edad = edad;
         this.raza = raza;
+        this.nombreP = nombreP;
     }
-
-
 
     public String getCedula() {
         return cedula;

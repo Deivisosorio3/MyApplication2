@@ -73,7 +73,7 @@
         android:layout_marginTop="22dp"
         android:ems="10"
         android:hint="Nombre Mascota"
-        android:inputType="number"
+        android:inputType="textPersonName"
         android:textStyle="bold" />
 
     <EditText
@@ -85,7 +85,7 @@
         android:layout_marginTop="20dp"
         android:ems="10"
         android:hint="Cedula Mascota"
-        android:inputType="textPersonName"
+        android:inputType="number"
         android:textStyle="bold" />
 
     <EditText
@@ -106,5 +106,6 @@
         android:layout_alignTop="@+id/editText3"
         android:layout_toEndOf="@+id/editText"
         android:background="@color/colorAccent"
+        android:onClick="buscarPropietario"
         app:srcCompat="@android:drawable/ic_menu_search" />
 </RelativeLayout>
