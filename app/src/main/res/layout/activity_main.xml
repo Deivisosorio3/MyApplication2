@@ -28,7 +28,7 @@
         android:layout_marginTop="@dimen/espacio_botones"
         android:background="@color/colorAccent"
         android:onClick="reg"
-        android:text="Consulta\Eliminacion"
+        android:text="consulta & eliminacion"
         android:textColor="@color/consulta_eliminacion" />
 
     <Button
