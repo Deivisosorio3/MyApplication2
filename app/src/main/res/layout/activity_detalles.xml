@@ -7,12 +7,29 @@
     tools:context="com.example.pc.myapplication.vista.Detalles">
 
     <TextView
+        android:id="@+id/txv_nombre_vacuna"
         android:layout_width="200dp"
         android:layout_height="20dp"
-        android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold"
+        android:layout_marginTop="20dp"
         android:text="Nombre Vacuna"
-        />
+        android:textStyle="bold" />
 
+    <TextView
+        android:id="@+id/txv_fecha"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="Fecha"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txv_dosis"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:text="Dosis"
+        android:textStyle="bold" />
 </RelativeLayout>
