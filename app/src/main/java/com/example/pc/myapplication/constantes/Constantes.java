@@ -16,6 +16,7 @@ public class Constantes {
 
     public static final String COLUMNA_CEDULA_MASCOTA= "cedula";
     public static final String COLUMNA_NOMBRE_MASCOTA= "nombre";
+    public static final String COLUMNA_TIPO_MASCOTA= "tipo";
     public static final String COLUMNA_EDAD_MASCOTA= "edad";
     public static final String COLUMNA_RAZA_MASCOTA= "raza";
 
