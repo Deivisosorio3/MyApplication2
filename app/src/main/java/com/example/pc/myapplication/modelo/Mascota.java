@@ -11,6 +11,8 @@ public class Mascota {
     private String nombre;
     private String tipo;
     private int edad;
+    private String raza;
+    private String nombreP;
 
     public String getTipo() {
         return tipo;
@@ -20,8 +22,7 @@ public class Mascota {
         this.tipo = tipo;
     }
 
-    private String raza;
-    private String nombreP;
+
 
     public String getNombreP() {
         return nombreP;

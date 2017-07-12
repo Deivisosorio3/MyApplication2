@@ -12,7 +12,7 @@ import com.example.pc.myapplication.constantes.Constantes;
 
 public class DataBase extends SQLiteOpenHelper{
 
-        String crearTablaMascota="create table "+ Constantes.NOMBRE_TABLA_MASCOTAS+" ("+Constantes.COLUMNA_CEDULA_MASCOTA+" text , "+Constantes.COLUMNA_NOMBRE_MASCOTA+" text,"+Constantes.COLUMNA_TIPO_MASCOTA+" text, "+Constantes.COLUMNA_EDAD_MASCOTA+" int,"+Constantes.COLUMNA_RAZA_MASCOTA+" text,"+Constantes.NOMBRE_PROPIETARIO+" text)";
+        String crearTablaMascota="create table "+ Constantes.NOMBRE_TABLA_MASCOTAS+" ("+Constantes.COLUMNA_CEDULA_MASCOTA+" text , "+Constantes.COLUMNA_NOMBRE_MASCOTA+" text,"+Constantes.COLUMNA_TIPO_MASCOTA+" text, "+Constantes.COLUMNA_EDAD_MASCOTA+" long,"+Constantes.COLUMNA_RAZA_MASCOTA+" text,"+Constantes.NOMBRE_PROPIETARIO+" text)";
         String crearTablaVacuna="create table "+Constantes.NOMBRE_TABLA_VACUNAS+" ("+Constantes.COLUMNA_NOMBRE_VACUNA+" text,"+Constantes.COLUMNA_FECHA_VACUNA+" text ,"+Constantes.COLUMNA_DOSIS_VACUNA+" text)";
         String crearTablaPropietario="create table "+Constantes.NOMBRE_TABLA_PROPIETARIOS+
                 " ("+Constantes.COLUMNA_CEDULA_PROPIETARIO+" long , "+
