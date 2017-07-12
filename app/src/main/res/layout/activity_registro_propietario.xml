@@ -23,10 +23,10 @@
         tools:layout_editor_absoluteY="97dp"
         android:layout_marginTop="27dp"
         android:layout_below="@+id/textView"
-        android:layout_alignStart="@+id/edt_cedula_propietario" />
+        android:layout_alignStart="@+id/edt_cedula_mascota" />
 
     <EditText
-        android:id="@+id/edt_cedula_propietario"
+        android:id="@+id/edt_cedula_mascota"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -48,8 +48,8 @@ android:layout_marginTop="20dp"
         tools:layout_editor_absoluteX="97dp"
         tools:layout_editor_absoluteY="178dp"
         android:layout_marginTop="28dp"
-        android:layout_below="@+id/edt_cedula_propietario"
-        android:layout_alignStart="@+id/edt_cedula_propietario" />
+        android:layout_below="@+id/edt_cedula_mascota"
+        android:layout_alignStart="@+id/edt_cedula_mascota" />
 
     <Button
         android:id="@+id/btn_registrar_propietario"
