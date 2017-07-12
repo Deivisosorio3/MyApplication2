@@ -9,7 +9,9 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 import com.example.pc.myapplication.R;
+import com.example.pc.myapplication.controlador.ControladorMascotas;
 import com.example.pc.myapplication.controlador.ControladorPropietario;
+import com.example.pc.myapplication.modelo.Mascota;
 import com.example.pc.myapplication.modelo.Propietario;
 
 public class RegistroPropietario extends AppCompatActivity {
@@ -22,7 +24,7 @@ public class RegistroPropietario extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro_propietario);
-        cedula=(EditText)findViewById(R.id.edt_cedula_mascota);
+        cedula=(EditText)findViewById(R.id.edt_cedula_propietario);
         telefono=(EditText)findViewById(R.id.edt_telefono_propietario);
         nombre=(EditText)findViewById(R.id.edt_nombre_propietario);
         controladorPropietario=new ControladorPropietario(this);

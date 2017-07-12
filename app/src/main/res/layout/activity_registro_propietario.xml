@@ -26,7 +26,7 @@
         android:layout_alignStart="@+id/edt_cedula_mascota" />
 
     <EditText
-        android:id="@+id/edt_cedula_mascota"
+        android:id="@+id/edt_cedula_propietario"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
