@@ -25,6 +25,7 @@ public class RegistroMascota extends AppCompatActivity {
     TextView nombrePropietario,telefonoPropietario;
     Mascota mascota;
     Propietario propietario;
+    String nombreP;
 
 
 
@@ -52,22 +53,14 @@ public class RegistroMascota extends AppCompatActivity {
 
     }
 
-    public void registroMascota(View v){
-        String cedulaMas=cedula.getText().toString();
-        String nombreMas=nombre.getText().toString();
-        int edadMas=Integer.parseInt(edad.getSelectedItem().toString());
-        String tipoMas=tipo.getSelectedItem().toString();
-        String razaMas=raza.getSelectedItem().toString();
-
-     mascota=new Mascota(cedulaMas, nombreMas,tipoMas,edadMas,razaMas,mascota.getNombreP());
-        controladorMascotas.registrarMascota(mascota);
-        Toast.makeText(this, "El Registro ha sido Exitoso", Toast.LENGTH_SHORT).show();
 
 
 
-    }
+
+
+
     public void buscarPropietario(View v){
-        String nombreP;
+
         nombreP=buscarP.getText().toString();
         Log.e("nombreP", nombreP);
         propietario=controladorPropietario.consultarPropietario(nombreP);
@@ -77,6 +70,27 @@ public class RegistroMascota extends AppCompatActivity {
         }else {
 
             nombrePropietario.setText(nombreP);
+            telefonoPropietario.setText(String.valueOf(propietario.getTelefono()));
+        }
+
+
+
+    }
+    public void registroMascota(View v){
+        String cedulaMas=cedula.getText().toString();
+        String nombreMas=nombre.getText().toString();
+        int edadMas=Integer.parseInt(edad.getSelectedItem().toString());
+        String tipoMas=tipo.getSelectedItem().toString();
+        String razaMas=raza.getSelectedItem().toString();
+        nombreP=buscarP.getText().toString();
+
+        mascota=new Mascota(cedulaMas, nombreMas,tipoMas,edadMas,razaMas,nombreP);
+        controladorMascotas.registrarMascota(mascota);
+        if (mascota == null){
+
+            Toast.makeText(this, " No Existe mascota", Toast.LENGTH_SHORT).show();
+        }else {
+            Toast.makeText(this, "El Registro ha sido Exitoso", Toast.LENGTH_SHORT).show();
             telefonoPropietario.setText(String.valueOf(propietario.getTelefono()));
         }
 
