@@ -47,7 +47,7 @@ public class ControladorMascotas {
 
     public void eliminararMascota(String nombre){
         sqLiteDatabase= baseD.getWritableDatabase();
-        String eliminar="delete from "+Constantes.NOMBRE_TABLA_MASCOTAS+"where "+Constantes.COLUMNA_NOMBRE_MASCOTA+"=  '"+mascota.getNombre()+"'";
+        String eliminar="delete from "+Constantes.NOMBRE_TABLA_MASCOTAS+" where "+Constantes.COLUMNA_NOMBRE_MASCOTA+"=  '"+mascota.getNombre()+"'";
         sqLiteDatabase.execSQL(eliminar);
         sqLiteDatabase.close();
 
