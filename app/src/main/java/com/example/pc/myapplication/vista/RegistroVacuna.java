@@ -15,6 +15,7 @@ import com.example.pc.myapplication.controlador.ControladorVacuna;
 import com.example.pc.myapplication.modelo.Mascota;
 import com.example.pc.myapplication.modelo.Vacuna;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 
 import static com.example.pc.myapplication.R.id.telefonoPropietario;
@@ -26,6 +27,7 @@ public class RegistroVacuna extends AppCompatActivity {
     Vacuna vacuna;
     ArrayAdapter<String> adapter;
     ListView listaVacun;
+    Mascota mascota;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,15 +52,35 @@ fecha.setText(fechaAct);
         String nombreV=nombreVa.getText().toString();
         String fecha1 = fecha.getText().toString();
         String dosisV = dosis.getText().toString();
-        vacuna=new Vacuna(nombreV,fecha1,dosisV);
+
+        vacuna=new Vacuna(nombreV,fecha1,dosisV,mascota.getNombre());
 
         controladorVacuna.registrarVacuna(vacuna);
+        Toast.makeText(this, "Vacuna Registrada Exitosamente", Toast.LENGTH_SHORT).show();
 
 
 
     }
 
     public void consultarMascota(View v) {
+        String cedulaM=cedulaMas.getText().toString();
+        mascota=controladorMascotas.consultarMascota(cedulaM);
+        if (mascota == null){
+
+            Toast.makeText(this, " No Existe mascota", Toast.LENGTH_SHORT).show();
+        }else {
+            ArrayList<Vacuna>  vacunaTotal=controladorVacuna.consultarTodasVacuna(mascota.getNombre());
+            if (vacunaTotal.size()>0){
+                String[] vacu= new  String[vacunaTotal.size()];
+                for (int f=0;f>vacu.length;f++){
+                    vacu[f]=vacunaTotal.get(f).getNombre();
+
+
+                }
+                adapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,vacu);
+            }
+
+        }
 
 
 

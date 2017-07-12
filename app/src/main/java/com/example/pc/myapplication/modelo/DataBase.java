@@ -20,7 +20,7 @@ public class DataBase extends SQLiteOpenHelper{
                 Constantes.COLUMNA_RAZA_MASCOTA+" text,"+
                 Constantes.NOMBRE_PROPIETARIO+" text)";
 
-        String crearTablaVacuna="create table "+Constantes.NOMBRE_TABLA_VACUNAS+" ("+Constantes.COLUMNA_NOMBRE_VACUNA+" text,"+Constantes.COLUMNA_FECHA_VACUNA+" text ,"+Constantes.COLUMNA_DOSIS_VACUNA+" text)";
+        String crearTablaVacuna="create table "+Constantes.NOMBRE_TABLA_VACUNAS+" ("+Constantes.COLUMNA_NOMBRE_VACUNA+" text,"+Constantes.COLUMNA_FECHA_VACUNA+" text ,"+Constantes.COLUMNA_DOSIS_VACUNA+" text,"+Constantes.COLUMNA_MASCOTA_VACUNA+" text)";
         String crearTablaPropietario="create table "+Constantes.NOMBRE_TABLA_PROPIETARIOS+
                 " ("+Constantes.COLUMNA_CEDULA_PROPIETARIO+" long , "+
                 Constantes.COLUMNA_NOMBRE_PROPIETARIO+" text,"+

@@ -23,6 +23,7 @@ public class Constantes {
     public static final String COLUMNA_NOMBRE_VACUNA= "nombre";
     public static final String COLUMNA_FECHA_VACUNA= "fecha";
     public static final String COLUMNA_DOSIS_VACUNA= "dosis";
+    public static final String COLUMNA_MASCOTA_VACUNA= "nomMascota";
 
 
     public static final String COLUMNA_CEDULA_PROPIETARIO= "cedula";

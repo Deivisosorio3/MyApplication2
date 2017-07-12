@@ -13,6 +13,14 @@ public class Vacuna {
     private String nombre_m;
 
 
+    public String getFecha() {
+        return fecha;
+    }
+
+    public void setFecha(String fecha) {
+        this.fecha = fecha;
+    }
+
     public String getNombre() {
         return nombre;
     }
@@ -39,11 +47,10 @@ public class Vacuna {
         this.dosis = dosis;
     }
 
-    public  Vacuna(String nombre, String fecha,String dosis) {
-
+    public Vacuna(String nombre, String fecha, String dosis, String nombre_m) {
         this.nombre = nombre;
         this.fecha = fecha;
         this.dosis = dosis;
-
+        this.nombre_m = nombre_m;
     }
 }
