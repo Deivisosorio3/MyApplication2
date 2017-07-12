@@ -33,13 +33,14 @@ public class ControladorMascotas {
     public Mascota consultarMascota(String cedula){
         sqLiteDatabase= baseD.getWritableDatabase();
         String consultar="select * from "+Constantes.NOMBRE_TABLA_MASCOTAS+" where "+Constantes.COLUMNA_CEDULA_MASCOTA+" ='"+cedula+"'";
-        sqLiteDatabase.close();
+
         Cursor cursor=sqLiteDatabase.rawQuery(consultar,null);
         if (cursor.moveToFirst()){
             mascota=new Mascota(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getInt(3),cursor.getString(4),cursor.getString(5));
         }else {
             mascota=null;
         }
+        sqLiteDatabase.close();
         return mascota;
 
     }
