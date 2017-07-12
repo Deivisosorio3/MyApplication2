@@ -53,7 +53,14 @@ public class Consultar extends AppCompatActivity {
 
 
 
+
     }
+    public  void  eliminarMascota(View v){
+        controladorMascotas.eliminararMascota(mascota.getCedula());
+        Toast.makeText(this, "Mascota Eliminada Correctamente", Toast.LENGTH_SHORT).show();
+
+        }
+
     public void volver(View v){
         Intent i = new Intent(this, MainActivity.class );
         startActivity(i);
