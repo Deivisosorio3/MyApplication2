@@ -77,7 +77,7 @@ fecha.setText(fechaAct);
 
 
                 }
-                adapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,vacu);
+                adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,vacu);
                 listaVacun.setAdapter(adapter);
             }else {
                 Toast.makeText(this, "No hay Vacunas Registradas", Toast.LENGTH_SHORT).show();
