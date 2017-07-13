@@ -124,8 +124,8 @@
         android:id="@+id/imagen_mascota"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        android:layout_above="@+id/editText"
-        android:layout_toEndOf="@+id/editText2"
         app:srcCompat="@mipmap/huella"
-        android:contentDescription="usuario" />
+        android:contentDescription="usuario"
+        android:layout_above="@+id/editText"
+        android:layout_toStartOf="@+id/editText2" />
 </RelativeLayout>
