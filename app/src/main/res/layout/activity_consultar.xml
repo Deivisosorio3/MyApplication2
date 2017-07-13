@@ -33,7 +33,7 @@
         android:layout_alignStart="@+id/scrollView2"
         android:layout_marginBottom="71dp"
         android:background="@color/colorAccent"
-        android:onClick="eliminarMascota"
+        android:onClick="eliminarMascotaC"
         android:text="Eliminar" />
 
     <Button

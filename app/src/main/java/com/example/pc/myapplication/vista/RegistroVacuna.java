@@ -1,9 +1,9 @@
 package com.example.pc.myapplication.vista;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.format.DateFormat;
-import android.util.Log;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
@@ -58,15 +58,16 @@ fecha.setText(fechaAct);
 
         controladorVacuna.registrarVacuna(vacuna);
         Toast.makeText(this, "Vacuna Registrada Exitosamente", Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
+        finish();
 
 
 
     }
 
     public void consultarMascota(View v) {
-
         String cedulaM=cedulaMas.getText().toString();
-
         mascota=controladorMascotas.consultarMascota(cedulaM);
         if (mascota == null){
 
@@ -77,14 +78,10 @@ fecha.setText(fechaAct);
                 String[] vacu= new  String[vacunaTotal.size()];
                 for (int f=0;f>vacu.length;f++){
                     vacu[f]=vacunaTotal.get(f).getNombre();
-
-                    Log.e("nombre vacuna", vacu[f]);
-
                 }
-                adapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,vacu);
-
-                Toast.makeText(this, "total vacunas:" + String.valueOf(vacunaTotal.size()), Toast.LENGTH_SHORT).show();
-                //listaVacun.setAdapter(adapter);
+                adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,vacu);
+               // listaVacun.setAdapter(adapter);
+                Toast.makeText(this, "vacunas suministradas"+vacu, Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(this, "No hay Vacunas Registradas", Toast.LENGTH_SHORT).show();
             }
