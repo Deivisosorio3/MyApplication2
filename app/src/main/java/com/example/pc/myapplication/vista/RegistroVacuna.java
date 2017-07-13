@@ -1,5 +1,6 @@
 package com.example.pc.myapplication.vista;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.format.DateFormat;
@@ -57,6 +58,9 @@ fecha.setText(fechaAct);
 
         controladorVacuna.registrarVacuna(vacuna);
         Toast.makeText(this, "Vacuna Registrada Exitosamente", Toast.LENGTH_SHORT).show();
+        Intent intent=new Intent(this,MainActivity.class);
+        startActivity(intent);
+        finish();
 
 
 
@@ -78,7 +82,8 @@ fecha.setText(fechaAct);
 
                 }
                 adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,vacu);
-                listaVacun.setAdapter(adapter);
+               // listaVacun.setAdapter(adapter);
+                Toast.makeText(this, "Hay tantas vacunas", Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(this, "No hay Vacunas Registradas", Toast.LENGTH_SHORT).show();
             }
