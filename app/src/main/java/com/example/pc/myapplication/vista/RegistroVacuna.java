@@ -78,12 +78,10 @@ fecha.setText(fechaAct);
                 String[] vacu= new  String[vacunaTotal.size()];
                 for (int f=0;f>vacu.length;f++){
                     vacu[f]=vacunaTotal.get(f).getNombre();
-
-
                 }
                 adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,vacu);
                // listaVacun.setAdapter(adapter);
-                Toast.makeText(this, "Hay tantas vacunas", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "vacunas suministradas"+vacu, Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(this, "No hay Vacunas Registradas", Toast.LENGTH_SHORT).show();
             }

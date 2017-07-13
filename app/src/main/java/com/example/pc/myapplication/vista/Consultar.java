@@ -55,7 +55,7 @@ public class Consultar extends AppCompatActivity {
 
 
     }
-    public  void  eliminarMascota(View v){
+    public  void  eliminarMascotaC(View v){
         controladorMascotas.eliminararMascota(mascota.getCedula());
         Toast.makeText(this, "Mascota Eliminada Correctamente", Toast.LENGTH_SHORT).show();
         Intent intent=new Intent(this,MainActivity.class);
