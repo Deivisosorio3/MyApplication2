@@ -102,13 +102,11 @@
         android:layout_toStartOf="@+id/buscarPropietario" />
 
     <ImageView
-        android:id="@+id/img_buscar_usuario"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginLeft="44dp"
-        android:layout_marginTop="260dp"
         app:srcCompat="@mipmap/usuario"
-        tools:ignore="RtlHardcoded" />
+        android:layout_marginTop="260dp"
+        android:layout_marginLeft="44dp"/>
 
     <ImageButton
         android:id="@+id/buscarPropietario"
@@ -121,10 +119,11 @@
         app:srcCompat="@android:drawable/ic_menu_search" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imagen_mascota"
         android:layout_width="wrap_content"
         android:layout_height="40dp"
-        app:srcCompat="@mipmap/huella"
         android:layout_above="@+id/editText"
-        android:layout_toEndOf="@+id/editText2" />
+        android:layout_toEndOf="@+id/editText2"
+        app:srcCompat="@mipmap/huella"
+        android:contentDescription="usuario" />
 </RelativeLayout>
