@@ -4,7 +4,9 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.format.DateFormat;
+import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -75,12 +77,21 @@ fecha.setText(fechaAct);
         }else {
             ArrayList<Vacuna>  vacunaTotal=controladorVacuna.consultarTodasVacuna(mascota.getNombre());
             if (vacunaTotal.size()>0){
-                String[] vacu= new  String[vacunaTotal.size()];
+                final String[] vacu= new  String[vacunaTotal.size()];
                 for (int f=0;f<vacu.length;f++){
                     vacu[f]=vacunaTotal.get(f).getNombre();
                 }
                 adapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,vacu);
                 listaVacun.setAdapter(adapter);
+                listaVacun.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                        Log.e("1click en", "listView");
+                        Toast.makeText(RegistroVacuna.this, "Escogiste la vacuna: " + vacu[position], Toast.LENGTH_SHORT).show();
+
+                    }
+                });
 
             }else {
                 Toast.makeText(this, "No hay Vacunas Registradas", Toast.LENGTH_SHORT).show();
