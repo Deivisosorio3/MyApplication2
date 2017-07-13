@@ -8,12 +8,13 @@
     tools:context="com.example.pc.myapplication.vista.RegistroVacuna">
 
     <ImageView
-        android:id="@+id/img_cedula_mascota"
+        android:id="@+id/img_cedula_mascota_buscar"
         android:layout_width="40dp"
         android:layout_height="45dp"
         android:layout_marginLeft="35dp"
         android:layout_marginTop="30dp"
-        app:srcCompat="@mipmap/huella" />
+        app:srcCompat="@mipmap/huella"
+        tools:ignore="RtlHardcoded" />
 
     <EditText
         android:id="@+id/edt_cedula_mascota"
