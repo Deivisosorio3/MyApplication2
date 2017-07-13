@@ -92,6 +92,8 @@ public class RegistroMascota extends AppCompatActivity {
         }else {
             Toast.makeText(this, "El Registro ha sido Exitoso", Toast.LENGTH_SHORT).show();
             telefonoPropietario.setText(String.valueOf(propietario.getTelefono()));
+            Intent intent=new Intent(this,MainActivity.class);
+            startActivity(intent);
         }
 
 
