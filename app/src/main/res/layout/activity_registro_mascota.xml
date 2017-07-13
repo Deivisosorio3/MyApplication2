@@ -106,7 +106,9 @@
         android:layout_height="40dp"
         app:srcCompat="@mipmap/usuario"
         android:layout_marginTop="260dp"
-        android:layout_marginLeft="44dp"/>
+        android:layout_marginLeft="44dp"
+        tools:ignore="ContentDescription,RtlHardcoded"
+        android:id="img_usuario"/>
 
     <ImageButton
         android:id="@+id/buscarPropietario"
