@@ -67,7 +67,7 @@ sqLiteDatabase.execSQL(registroVa);
     }
     public ControladorVacuna(Context context) {
         this.context = context;
-        DataBase baseD = new DataBase(context, Constantes.NOMBRE_BD, null, 1);
+         baseD = new DataBase(context, Constantes.NOMBRE_BD, null, 1);
         sqLiteDatabase= baseD.getWritableDatabase();
         sqLiteDatabase.close();
     }
