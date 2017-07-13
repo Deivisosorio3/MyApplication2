@@ -11,7 +11,7 @@
     android:layout_height="40dp"
     android:layout_marginTop="60dp"
     android:layout_marginLeft="30dp"
-    app:srcCompat="@mipmap/huell"/>
+    app:srcCompat="@mipmap/huellla"/>
 
 
     <ImageView
