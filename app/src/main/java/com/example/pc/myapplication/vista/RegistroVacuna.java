@@ -76,19 +76,12 @@ fecha.setText(fechaAct);
             ArrayList<Vacuna>  vacunaTotal=controladorVacuna.consultarTodasVacuna(mascota.getNombre());
             if (vacunaTotal.size()>0){
                 String[] vacu= new  String[vacunaTotal.size()];
-                for (int f=0;f>vacu.length;f++){
+                for (int f=0;f<vacu.length;f++){
                     vacu[f]=vacunaTotal.get(f).getNombre();
                 }
-                adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,vacu);
-               // listaVacun.setAdapter(adapter);
-                //Acuerdate que vacu es un vector para acceder a sus elementos tienes que indicar el indice asi
-                // vacu[0]
-                //vacu[1]
-                //si quieres mostrarlos todos, tienes que recorrer el vector en un for y
-                // asignarle cada uno de sus elementos a un stringbuffer
-                //asi:
-                //for()
-                Toast.makeText(this, "vacunas suministradas"+vacu, Toast.LENGTH_SHORT).show();
+                adapter=new ArrayAdapter<>(this,android.R.layout.simple_list_item_1,vacu);
+                listaVacun.setAdapter(adapter);
+
             }else {
                 Toast.makeText(this, "No hay Vacunas Registradas", Toast.LENGTH_SHORT).show();
             }
