@@ -81,6 +81,9 @@ fecha.setText(fechaAct);
                 }
                 adapter=new ArrayAdapter<String>(this,android.R.layout.simple_list_item_1,vacu);
                // listaVacun.setAdapter(adapter);
+                //Acuerdate que vacu es un vector para acceder a sus elementos tienes que indicar el indice asi
+                // vacu[0]
+                //vacu[1]
                 Toast.makeText(this, "vacunas suministradas"+vacu, Toast.LENGTH_SHORT).show();
             }else {
                 Toast.makeText(this, "No hay Vacunas Registradas", Toast.LENGTH_SHORT).show();
