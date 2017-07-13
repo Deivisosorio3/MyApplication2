@@ -102,11 +102,13 @@
         android:layout_toStartOf="@+id/buscarPropietario" />
 
     <ImageView
+        android:id="@+id/img_buscar_usuario"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:srcCompat="@mipmap/usuario"
+        android:layout_marginLeft="44dp"
         android:layout_marginTop="260dp"
-        android:layout_marginLeft="44dp"/>
+        app:srcCompat="@mipmap/usuario"
+        tools:ignore="RtlHardcoded" />
 
     <ImageButton
         android:id="@+id/buscarPropietario"
