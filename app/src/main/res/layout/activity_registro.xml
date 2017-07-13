@@ -92,7 +92,7 @@
         android:layout_marginLeft="200dp"
         android:layout_marginTop="430dp"
         android:background="@color/colorAccent"
-        android:onClick="registrarMascota"
+        android:onClick="registroVacuna"
         android:text="registrar" />
 
 
