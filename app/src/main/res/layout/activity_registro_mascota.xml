@@ -99,7 +99,8 @@
         android:inputType="textPersonName"
         android:hint="Buscar Propietario"
         android:layout_below="@+id/spinner"
-        android:layout_toStartOf="@+id/buscarPropietario" />
+        android:layout_toStartOf="@+id/buscarPropietario"
+        tools:ignore="HardcodedText" />
 
     <ImageView
         android:id="@+id/usuario_img"
@@ -130,13 +131,14 @@
         android:layout_toStartOf="@+id/editText2" />
 
     <ImageView
-        android:id="@+id/imagen_nombre"
+        android:id="@+id/imagen_nombre_mascota"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        app:srcCompat="@mipmap/perro"
-        android:contentDescription="usuario"
-        android:layout_alignTop="@+id/edt_cedula_mascota"
         android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/edt_cedula_mascota"
+        android:layout_marginLeft="40dp"
         android:layout_marginTop="90dp"
-        android:layout_marginLeft="40dp"/>
+        android:contentDescription="usuario"
+        app:srcCompat="@mipmap/perro"
+        tools:ignore="HardcodedText,RtlHardcoded" />
 </RelativeLayout>
