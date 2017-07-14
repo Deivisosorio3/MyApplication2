@@ -26,10 +26,12 @@ Button regM,regVa,regPro,regis,sal;
         Intent i = new Intent(this, RegistroMascota.class );
         startActivity(i);
 
+
     }
     public void registroVacuna(View v){
         Intent i = new Intent(this, RegistroVacuna.class );
         startActivity(i);
+
 
     }
     public void registroPropietario(View v){

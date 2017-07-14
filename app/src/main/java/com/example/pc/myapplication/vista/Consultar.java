@@ -67,6 +67,7 @@ public class Consultar extends AppCompatActivity {
     public void volver(View v){
         Intent i = new Intent(this, MainActivity.class );
         startActivity(i);
+        finish();
 
 
     }

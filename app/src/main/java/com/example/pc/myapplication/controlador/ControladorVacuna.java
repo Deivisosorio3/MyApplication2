@@ -29,10 +29,10 @@ sqLiteDatabase.execSQL(registroVa);
         sqLiteDatabase.close();
 
     }
-    public Vacuna consultarVacuna(String nombre){
+    public Vacuna verDetalles(String nombre){
 
         sqLiteDatabase= baseD.getWritableDatabase();
-        String consultar="select * from "+Constantes.NOMBRE_TABLA_VACUNAS+" where "+Constantes.COLUMNA_NOMBRE_VACUNA+" ='"+vacuna.getNombre()+"'";
+        String consultar="select * from "+Constantes.NOMBRE_TABLA_VACUNAS+" where "+Constantes.COLUMNA_NOMBRE_VACUNA+" ='"+nombre+"'";
         Cursor cursor=sqLiteDatabase.rawQuery(consultar,null);
         if (cursor.moveToFirst()){
             vacuna=new Vacuna(cursor.getString(0),cursor.getString(1),cursor.getString(2),cursor.getString(3));
@@ -44,6 +44,10 @@ sqLiteDatabase.execSQL(registroVa);
         sqLiteDatabase.close();
         return vacuna;
     }
+
+
+
+
 
     public  ArrayList<Vacuna> consultarTodasVacuna(String nombre) {
         ArrayList<Vacuna> vacunasT = new ArrayList<>();

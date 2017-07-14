@@ -68,7 +68,7 @@ fecha.setText(fechaAct);
 
     }
 
-    public void consultarMascota(View v) {
+    public void consultarMascotaE(View v) {
         String cedulaM=cedulaMas.getText().toString();
         mascota=controladorMascotas.consultarMascota(cedulaM);
         if (mascota == null){
@@ -89,6 +89,10 @@ fecha.setText(fechaAct);
 
                         Log.e("1click en", "listView");
                         Toast.makeText(RegistroVacuna.this, "Escogiste la vacuna: " + vacu[position], Toast.LENGTH_SHORT).show();
+                        Intent intent;
+                              intent  = new Intent(RegistroVacuna.this,Detalles.class);
+                        intent.putExtra("nombre",vacu[position]);
+                        startActivity(intent);
 
                     }
                 });
